@@ -40,6 +40,6 @@ jobs:
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9.1
+          python-version: 3.12.2
       - name: task 1 add devnet account 2 sol 
         run: python ./get.py
