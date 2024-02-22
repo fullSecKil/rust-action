@@ -8,9 +8,6 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-  # 每天每 15 分钟运行一次此工作流
-  schedule:
-    - cron: '*/15 * * * *'
 
   # 允许用于在 `Actions` 标签页中手动运行工作流
   workflow_dispatch:
