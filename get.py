@@ -1,8 +1,7 @@
-import requests
+import http.client
 import json
 
-url = "https://api.devnet.solana.com"
-
+conn = http.client.HTTPSConnection("api.devnet.solana.com")
 payload = json.dumps({
   "method": "requestAirdrop",
   "jsonrpc": "2.0",
@@ -15,7 +14,7 @@ payload = json.dumps({
 headers = {
   'Content-Type': 'application/json'
 }
-
-response = requests.request("POST", url, headers=headers, data=payload)
-
-print(response.text)
+conn.request("POST", "/", payload, headers)
+res = conn.getresponse()
+data = res.read()
+print(data.decode("utf-8"))
