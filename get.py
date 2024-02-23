@@ -23,7 +23,7 @@ payload2 = json.dumps({
   ]
 })
 
-arrays = [payload1, payload1, payload2]
+arrays = [payload1, payload1, payload2, payload2]
 
 headers = {
   'Content-Type': 'application/json'
