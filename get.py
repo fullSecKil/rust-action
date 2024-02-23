@@ -1,5 +1,6 @@
 import http.client
 import json
+import time
 
 conn = http.client.HTTPSConnection("api.devnet.solana.com")
 payload1 = json.dumps({
@@ -34,4 +35,5 @@ for payload in arrays:
   data = res.read()
   print(data.decode("utf-8"))
   print("-------------------------------------\n")
+  time.sleep(2)
 
