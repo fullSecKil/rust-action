@@ -10,7 +10,7 @@ payload1 = json.dumps({
     "AuwZZwWTVMGxf3VWBo7rGgEoYJSwvzssaC7Tco12z5gr",
     2000000000
   ],
-  "id": "96dec5c4-4e6e-447e-bcf3-2bdebf9d282d"
+  "id": "c5935154-73a1-4712-9c08-c392d216dd22"
 })
 
 payload2 = json.dumps({
@@ -23,7 +23,7 @@ payload2 = json.dumps({
   ]
 })
 
-arrays = [payload1, payload2]
+arrays = [payload1, payload1, payload2]
 
 headers = {
   'Content-Type': 'application/json'
