@@ -48,3 +48,4 @@ jobs:
         run: | 
           python ./get.py
           python ./get_test.py
+          python ./get_inco_test.py
