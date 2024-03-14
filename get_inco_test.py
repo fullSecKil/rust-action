@@ -2,7 +2,7 @@ import http.client
 import json
 import time
 
-conn = http.client.HTTPSConnection("faucet.testnet.inco.org/api/get-faucet")
+conn = http.client.HTTPSConnection("faucet.testnet.inco.org")
 payload1 = json.dumps({
     "address": "0x1d2d4062F3bF9789bE550F08B7b9Add010EEb5D8"
 })
@@ -14,7 +14,7 @@ headers = {
 }
 
 for payload in arrays:
-  conn.request("POST", "/", payload, headers)
+  conn.request("POST", "/api/get-faucet", payload, headers)
   res = conn.getresponse()
   data = res.read()
   print(data.decode("utf-8"))
