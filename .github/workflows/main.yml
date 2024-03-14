@@ -48,4 +48,6 @@ jobs:
         run: | 
           python ./get.py
           python ./get_test.py
+      - name: task 2 add inco test coin
+        run: |
           python ./get_inco_test.py
