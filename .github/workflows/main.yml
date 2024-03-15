@@ -47,7 +47,25 @@ jobs:
       - name: task 1 add devnet account 2 sol 
         run: | 
           python ./get.py
-          python ./get_test.py
-      - name: task 2 add inco test coin
+      - name: task 2 add test account 2 sol 
+        run: | 
+          python ./get_test.py 5Q4hmzMSKjLdjpKsqn8KLxiHxUmrNUGmSYbbWNJH2PYj
+      - name: task 3 add devnet account 2 sol 
+        run: | 
+          python ./get_test.py ASQ3GaBQwSeDuTFrADvBGVbqLqNtahkZnBprHT4uEso7
+      - name: task 4 add devnet account 2 sol 
+        run: | 
+          python ./get_test.py 2KGd36cUGrkkZJCUJ9vr3mmPxH5VXMvQdxAywepRfokJ
+      - name: task 5 add devnet account 2 sol 
+        run: | 
+          python ./get_test.py AksDqZzMudL53f2ioWq7QNhpeFiuNjLREUjc37jCajat
+      - name: task 6 add devnet account 2 sol 
+        run: | 
+          python ./get_test.py F5Ypik73KXF52dYFEs8qctZkvNs2bkrWkwoVWfk1rZ4d
+      - name: task 7 add devnet account 2 sol 
+        run: | 
+          python ./get_test.py 69xgmEVpRTS2ykxLidegUP7baNB8wor7xx3BKgqKB7yb
+          
+      - name: task 8 add inco test coin
         run: |
           python ./get_inco_test.py
