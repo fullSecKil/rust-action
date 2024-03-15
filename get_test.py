@@ -1,6 +1,7 @@
 import http.client
 import json
 import time
+import sys
 
 conn = http.client.HTTPSConnection("api.testnet.solana.com")
 
@@ -37,9 +38,11 @@ conn = http.client.HTTPSConnection("api.testnet.solana.com")
 
 # arrays = [payload1, payload1, payload2, payload2, payload3]
 
-coin_address = ["5Q4hmzMSKjLdjpKsqn8KLxiHxUmrNUGmSYbbWNJH2PYj", "ASQ3GaBQwSeDuTFrADvBGVbqLqNtahkZnBprHT4uEso7"
-           , "2KGd36cUGrkkZJCUJ9vr3mmPxH5VXMvQdxAywepRfokJ", "AksDqZzMudL53f2ioWq7QNhpeFiuNjLREUjc37jCajat",
-           "F5Ypik73KXF52dYFEs8qctZkvNs2bkrWkwoVWfk1rZ4d", "69xgmEVpRTS2ykxLidegUP7baNB8wor7xx3BKgqKB7yb"]
+# coin_address = ["5Q4hmzMSKjLdjpKsqn8KLxiHxUmrNUGmSYbbWNJH2PYj", "ASQ3GaBQwSeDuTFrADvBGVbqLqNtahkZnBprHT4uEso7"
+#            , "2KGd36cUGrkkZJCUJ9vr3mmPxH5VXMvQdxAywepRfokJ", "AksDqZzMudL53f2ioWq7QNhpeFiuNjLREUjc37jCajat",
+#            "F5Ypik73KXF52dYFEs8qctZkvNs2bkrWkwoVWfk1rZ4d", "69xgmEVpRTS2ykxLidegUP7baNB8wor7xx3BKgqKB7yb"]
+
+coin_address = [sys.argv[0]]
 
 json_body1 = {
   "method": "requestAirdrop",
