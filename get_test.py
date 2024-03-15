@@ -42,7 +42,7 @@ conn = http.client.HTTPSConnection("api.testnet.solana.com")
 #            , "2KGd36cUGrkkZJCUJ9vr3mmPxH5VXMvQdxAywepRfokJ", "AksDqZzMudL53f2ioWq7QNhpeFiuNjLREUjc37jCajat",
 #            "F5Ypik73KXF52dYFEs8qctZkvNs2bkrWkwoVWfk1rZ4d", "69xgmEVpRTS2ykxLidegUP7baNB8wor7xx3BKgqKB7yb"]
 
-coin_address = [sys.argv[0]]
+coin_address = [sys.argv[1]]
 
 json_body1 = {
   "method": "requestAirdrop",
