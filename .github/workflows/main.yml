@@ -46,7 +46,7 @@ jobs:
           python -m pip install --upgrade pip requests
       - name: task 1 add devnet account 2 sol 
         run: | 
-          python ./get.py
+          python ./get.py 5Q4hmzMSKjLdjpKsqn8KLxiHxUmrNUGmSYbbWNJH2PYj
       # - name: task 2 add test account 2 sol 
       #   run: | 
       #     python ./get_test.py 5Q4hmzMSKjLdjpKsqn8KLxiHxUmrNUGmSYbbWNJH2PYj
