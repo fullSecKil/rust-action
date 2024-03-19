@@ -66,6 +66,6 @@ jobs:
       #   run: | 
       #     python ./get_test.py 69xgmEVpRTS2ykxLidegUP7baNB8wor7xx3BKgqKB7yb
           
-      - name: task 8 add inco test coin
-        run: |
-          python ./get_inco_test.py
+      # - name: task 8 add inco test coin
+      #   run: |
+      #     python ./get_inco_test.py
