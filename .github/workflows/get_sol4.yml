@@ -44,6 +44,10 @@ jobs:
       - name: requirements
         run: |
           python -m pip install --upgrade pip requests
+      - name: task 1 add devnet account 2 sol 
+        run: | 
+          python ./get.py AksDqZzMudL53f2ioWq7QNhpeFiuNjLREUjc37jCajat
+          
       - name: task 5 add devnet account 2 sol 
         run: | 
           python ./get_test.py AksDqZzMudL53f2ioWq7QNhpeFiuNjLREUjc37jCajat
