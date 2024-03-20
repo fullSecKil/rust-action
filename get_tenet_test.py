@@ -18,6 +18,10 @@ body = {
     }
 }
 
+headers = {
+  'Content-Type': 'application/json'
+}
+
 for address in coin_address:
     body['params']['address'] = address
     payload = json.dumps(body)
