@@ -46,9 +46,9 @@ headers = {
 
 for body in jsons:
     payload = json.dumps(body)
-    conn.request("POST", "/rpc", payload, headers)
+    conn.request("POST", "/rpc/", payload, headers)
     res = conn.getresponse()
     data = res.read()
-    print("address "+ address +"-------------------------------------\n")
+    print("-------------------------------------\n")
     print(data.decode("utf-8"))
     time.sleep(2)
