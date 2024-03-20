@@ -23,10 +23,10 @@ headers = {
 
 print("hello world")
 
-# for payload in arrays:
-#   conn.request("POST", "/api/get-faucet", payload, headers)
-#   res = conn.getresponse()
-#   data = res.read()
-#   print(data.decode("utf-8"))
-#   print("-------------------------------------\n")
-#   time.sleep(2)
+for payload in arrays:
+  conn.request("POST", "/api/get-faucet", payload, headers)
+  res = conn.getresponse()
+  data = res.read()
+  print(data.decode("utf-8"))
+  print("-------------------------------------\n")
+  time.sleep(2)
