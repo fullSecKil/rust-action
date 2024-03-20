@@ -10,7 +10,7 @@ on:
     branches: [main]
   # 每天每 60 分钟运行一次此工作流
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '*/30 * * * *'
   # 允许用于在 `Actions` 标签页中手动运行工作流
   workflow_dispatch:
 
@@ -47,3 +47,6 @@ jobs:
       - name: task 1 add inco test coin
         run: |
           python ./get_inco_test.py
+      - name: task 2 add tenet test coin
+        run: |
+          python ./get_tenet_test.py
