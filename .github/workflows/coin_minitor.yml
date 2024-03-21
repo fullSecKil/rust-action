@@ -53,3 +53,6 @@ jobs:
       - name: test 3 add sei test coin
         run: |
           python ./get_sei_test.py
+      - name: test 4 add sei2 test coin
+        run: |
+          python ./get_sei_test2.py
