@@ -50,3 +50,6 @@ jobs:
       - name: task 2 add tenet test coin
         run: |
           python ./get_tenet_test.py
+      - name: test 3 add sei test coin
+        run: |
+          python ./get_sei_test.py
