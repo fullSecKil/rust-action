@@ -56,3 +56,6 @@ jobs:
       - name: test 4 add sei2 test coin
         run: |
           python ./get_sei_test2.py
+      - name: test 5 check sei test coin
+        run: |
+          python ./check_sei_test.py
