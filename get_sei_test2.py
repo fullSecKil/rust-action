@@ -11,7 +11,7 @@ coin_address = ["0x1d2d4062F3bF9789bE550F08B7b9Add010EEb5D8", "0x00B2fad42707d1A
 json_body = {
     "params": {
         "user_address": "0x1d2d4062F3bF9789bE550F08B7b9Add010EEb5D8",
-        "num_token": 10,
+        "num_token": 1,
         "token_name": "SEIV2"
     }
 }
