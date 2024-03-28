@@ -15,7 +15,7 @@ payload3 = json.dumps({
     "address": "0x00B2fad42707d1A632f30D8C76e7f43e5337b0c6"
 })
 
-arrays = [payload2 , payload2, payload1, payload1, payload3, payload3]
+arrays = [payload2, payload2, payload1, payload1, payload3, payload3]
 
 headers = {
   'Content-Type': 'application/json'
